@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+        <h3>Bookmarker</h3>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="addPage">
+            <div class="column">
+                <h2>Bookmark your favorite sites</h2>
+                <p>Site Name</p>
+                <input type="text" placeholder="Bookmark Name" class="form-control w-75 m-auto" id="siteName" >
+                <p class="alert alert-error warm1 d-none  w-75 m-auto mt-2" id="nameError">
+                    Name is required
+                </p>
+                <p class="alert alert-error warm1 d-none  w-75 m-auto mt-2" id="nameError2">
+                    this name already exist
+                </p>
+                <p>Site URL</p>
+                <input type="text" placeholder="Website URL" class="form-control w-75 m-auto" id="siteUrl" >
+                <p class="alert alert-error warm2 d-none w-75 m-auto mt-2" id="urlError">
+                    Url Field is required
+                </p>
+                <p class="alert alert-error d-none w-75 m-auto mt-2" id="urlError2">
+                    this url already exist
+                </p>
+                <div class="m-auto">
+                    <button id="Submit" onclick="submit()" class="btn btn-primary">Submit</button>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <div id="bookmarkList" class="column">
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p>© 2019 Bookmarker Inc.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
